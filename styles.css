@@ -1,0 +1,246 @@
+body {
+  font-family: "roboto";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: url(images/milad-fakurian-HE1_K4_-QT8-unsplash.jpg) center/cover;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  font-size: 1.3rem;
+  font-weight: 500;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+}
+nav ul li {
+  cursor: pointer;
+}
+.btn-contact {
+  background-color: rgb(30,30,47);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.logo {
+  font-family: "pacifico";
+  font-size: 2rem;
+  margin-left: 80px;
+  cursor: pointer;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  border-bottom: 1px solid rgb(218, 214, 214);
+  
+}
+.sidebar {
+  border-right: 1px solid rgb(207, 200, 200);
+  padding: 20px;
+  
+}
+.picture {
+  margin-top: 10px;
+  width: 250px;
+  height: 250px;
+  border-radius: 125px ;
+ margin: auto;
+}
+.bio {
+  margin: 10px;
+  padding: 10px;
+  margin-left: 20px;
+  border-bottom: 1px solid rgb(196, 191, 191);
+  
+}
+.bio i {
+  margin-right: 5px;
+}
+.bio a {
+  text-decoration: none;
+  color: black;
+  transition: transform 0.5s;
+}
+.bio a:hover {
+  background-color: rgb(66, 151, 225);
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+.main-header {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 50px;
+}
+h1 {
+  width: 80%;
+}
+.main-header p {
+  font-style: italic;
+}
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  background-color: rgb(0,112,210);
+  border-radius: 20px;
+  font-size: 1rem;
+  left: 1px;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+button:hover {
+  color: black;
+  background-color: rgb(66, 151, 225);
+  transform: scale(1.05);
+}
+/* *******************infos******************** */
+.infos {
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: 2px solid rgb(209,209,209);
+  padding: 20px 0;
+}
+h2 {
+  width: 70%;
+  text-align: center;
+  margin-left: 65px;
+  text-transform: capitalize;
+}
+.info-items {
+  width: 50%;
+  margin: 0 auto;
+}
+.infos li span {
+  font-size: 1.5em;
+    margin-right: 10px;
+}
+
+/* ************************SKILLS**************** */
+.skills {
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: 2px solid rgb(209,209,209);
+  padding: 20px;
+}
+.skills p {
+  text-transform: capitalize;
+}
+.tech-stack {
+  background-color: #1e1e2f; 
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; 
+  flex-wrap: wrap;
+  border-radius: 8px; 
+  margin-bottom: 20px;
+}
+
+.tech-stack img {
+  height: 60px; 
+  width: auto; 
+  transition: transform 0.3s ease, opacity 0.3s ease; 
+}
+
+.tech-stack img:hover {
+  transform: scale(1.2); 
+  opacity: 0.8; 
+}
+
+@media (max-width: 768px) {
+  .tech-stack img {
+      height: 50px; 
+  }
+}
+/* *************************NEXT******************* */
+
+.next {
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: 2px solid rgb(209,209,209);
+  padding: 20px;
+}
+.next p {
+  width: 70%;
+  margin: auto;
+  text-align: justify;
+  font-weight: 500;
+  font-style: oblique;
+  padding: 20px 0;
+}
+/* ***********************contact***************** */
+h3 {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
+.contact {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  border-bottom: 2px solid rgb(209,209,209);
+}
+.contact-item {
+  width: 600px;
+  margin: 0 auto;
+}
+.contact-item input {
+display: block;
+height: 40px;
+}
+label {
+font-family: "roboto";
+display: block;
+margin-bottom: 5px;
+}
+textarea {
+display: block;
+margin-bottom: 25px;
+height: 150px;
+resize: none;
+width: 100%;
+}
+.item1 {
+margin: 25px 0;
+}
+.search-bar {
+border: 2px solid rgb(209,209,209);
+border-radius: 5px;
+width: 100%;
+font-size: 16px;
+}
+.btn-subscribe {
+width: 150px;
+height: 50px;
+font-family: "roboto";
+font-size: 1.2rem;
+letter-spacing: 1px;
+padding: 10px 30px;
+border: none;
+border-radius: 5px;
+color: white;
+background-color: rgb(0,0,0);
+transition: transforme 0.15s;
+margin-left: 2px;
+}
+/* ***********************************Footer******************** */
+footer{
+  text-align: center;
+  padding: 20px;
+}
