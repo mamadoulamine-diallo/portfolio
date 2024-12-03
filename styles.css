@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: url(images/milad-fakurian-HE1_K4_-QT8-unsplash.jpg) center/cover;
+  
   z-index: 100;
 }
 
@@ -45,7 +45,21 @@ header {
   display: grid;
   grid-template-columns: 300px 1fr;
   border-bottom: 1px solid rgb(218, 214, 214);
+  overflow: hidden; 
+  position: relative;
+  padding-top: 20px;
   
+}
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(images/milad-fakurian-HE1_K4_-QT8-unsplash.jpg) center/cover;
+  opacity: 0.9; 
+  z-index: -1; 
 }
 .sidebar {
   border-right: 1px solid rgb(207, 200, 200);
@@ -79,6 +93,22 @@ header {
   padding: 5px 10px;
   border-radius: 20px;
 }
+main {
+  position: relative;
+  overflow: hidden; 
+  padding-top: 20px;
+}
+main::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(./images/cloud.jpg) center/cover;
+  opacity: 0.5; 
+  z-index: -1; 
+}
 .main-header {
   width: 80%;
   margin: 0 auto;
@@ -110,65 +140,92 @@ button:hover {
   transform: scale(1.05);
 }
 /* *******************infos******************** */
+
 .infos {
+  display: grid;
+  grid-template-columns: 300px 1fr;
   width: 80%;
   margin: 0 auto;
-  border-bottom: 2px solid rgb(209,209,209);
   padding: 20px 0;
 }
+
 h2 {
   width: 70%;
   text-align: center;
-  margin-left: 65px;
+  margin-left: 30px;
   text-transform: capitalize;
 }
 .info-items {
-  width: 50%;
+  width: 80%;
   margin: 0 auto;
+  padding-top: 15px;
+}
+.info-right h2 {
+  margin-bottom: 0;
+  margin-top: 50px;
 }
 .infos li span {
   font-size: 1.5em;
     margin-right: 10px;
 }
+.img-main {
+  width: 300px;
+  object-fit: contain;
+  
+}
 
 /* ************************SKILLS**************** */
 .skills {
-  width: 80%;
   margin: 0 auto;
   border-bottom: 2px solid rgb(209,209,209);
-  padding: 20px;
 }
+
 .skills p {
   text-transform: capitalize;
+  text-align: center;
 }
-.tech-stack {
-  background-color: #1e1e2f; 
-  padding: 20px;
+.skills-chart {
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 20px; 
-  flex-wrap: wrap;
-  border-radius: 8px; 
-  margin-bottom: 20px;
+  align-items: flex-end;
+  gap: 20px;
+  width: 100%;
+  text-align: center;
 }
 
-.tech-stack img {
-  height: 60px; 
-  width: auto; 
-  transition: transform 0.3s ease, opacity 0.3s ease; 
+.skill {
+  text-align: center;
+}
+.bar {
+  width: 50px;
+  background-color: #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: 0.3s;
 }
 
-.tech-stack img:hover {
-  transform: scale(1.2); 
-  opacity: 0.8; 
+.bar-html {
+  background-color: #e44d26;
+}
+.bar-css {
+  background-color: #264de4;
+}
+.bar-js {
+  background-color: #f7df1e;
+}
+.bar-react {
+  background-color: #61dbfb;
+}
+.bar-python {
+  background-color: #306998;
 }
 
-@media (max-width: 768px) {
-  .tech-stack img {
-      height: 50px; 
-  }
+.bar:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
 }
+
+
 /* *************************NEXT******************* */
 
 .next {
@@ -241,6 +298,8 @@ margin-left: 2px;
 }
 /* ***********************************Footer******************** */
 footer{
+  background: url(./images/igor-omilaev-eGGFZ5X2LnA-unsplash.jpg) center/cover;
+  color: white;
   text-align: center;
   padding: 20px;
 }
