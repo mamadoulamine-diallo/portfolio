@@ -24,6 +24,10 @@ nav ul {
 nav ul li {
   cursor: pointer;
 }
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}
 .btn-contact {
   background-color: rgb(30,30,47);
   color: white;
@@ -242,6 +246,7 @@ h2 {
   margin: 0 auto;
   padding: 50px 0;
   text-align: center;
+  border-bottom: 2px solid rgb(209,209,209);
 }
 
 .projects h2 {
@@ -283,6 +288,7 @@ h2 {
 
 .project-item p {
   font-size: 1rem;
+  font-style: oblique;
   margin-bottom: 15px;
 }
 
@@ -298,6 +304,26 @@ h2 {
 
 .btn-project:hover {
   background-color: rgb(66, 151, 225);
+}
+.btn-see-more {
+  display: inline-block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: rgb(30,30,47);
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.btn-see-more:hover {
+  color: black;
+  background-color: rgb(66, 151, 225);
+  transform: scale(1.05);
 }
 
 
@@ -328,6 +354,7 @@ h3 {
   margin: 0 auto;
   padding: 20px;
   border-bottom: 2px solid rgb(209,209,209);
+  background: url(./images/new-material-gPASJNVOuM0-unsplash.jpg) center/cover;
 }
 .contact-item {
   width: 600px;
