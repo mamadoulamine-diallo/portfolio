@@ -56,7 +56,7 @@ header::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url(../images/milad-fakurian-HE1_K4_-QT8-unsplash.jpg) center/cover;
+  background: url(./images/milad-fakurian-HE1_K4_-QT8-unsplash.jpg) center/cover;
   opacity: 0.9; 
   z-index: -1; 
 }
@@ -135,7 +135,7 @@ button:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url(../images/vackground-com-vo-M6JACr-k-unsplash.jpg) center/cover;
+  background: url(./images/vackground-com-vo-M6JACr-k-unsplash.jpg) center/cover;
   opacity: 0.1; 
   z-index: -1; 
 }
@@ -374,7 +374,7 @@ margin-left: 2px;
 }
 /* ***********************************Footer******************** */
 footer{
-  background: url(../images/igor-omilaev-eGGFZ5X2LnA-unsplash.jpg) center/cover;
+  background: url(./images/igor-omilaev-eGGFZ5X2LnA-unsplash.jpg) center/cover;
   color: white;
   text-align: center;
   padding: 20px;
