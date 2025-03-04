@@ -226,7 +226,10 @@ h2 {
 .bar-python {
   background-color: #306998;
 }
-.bar-vs {
+.bar-php {
+  background-color: #e44d26;
+}
+.bar-vscode {
   background-color: green;
 }
 .bar-mysql {
@@ -317,6 +320,7 @@ h2 {
   cursor: pointer;
   text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
   transition: background-color 0.3s ease;
 }
 

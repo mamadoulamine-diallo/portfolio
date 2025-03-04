@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Integ Run</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav id="backButtonNav">
+      <a href="../../index.html#projects" class="btn-back">← Retour à Mes Projets</a>
+    </nav>
+    
+    
+    
+    <header>
+      <div class="header-container">
+        <div class="header-left">
+          <div>
+            <h1>Run</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatibus dolores saepe et quae quidem. Veritatis ex ullam,
+              ipsam autem ratione ducimus deleniti? Dignissimos blanditiis,
+              natus ad iusto similique labore illum.
+            </p>
+            <button>get started</button>
+          </div>
+        </div>
+        <div class="header-right">
+          <img class="img-banner" src="img/banner.jpg" alt="" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="run">
+        <div class="run-container_1">
+          <div class="run-left">
+            <img src="img/img-left.jpg" alt="" />
+          </div>
+          <div class="run-right">
+            <div>
+              <h2>Magna etiam feugiat</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto
+                modi laudantium illo quaerat quos commodi similique nam autem
+                optio dolores temporibus voluptas delectus dolore, quo itaque,
+                rerum necessitatibus animi sed.
+              </p>
+              <button>learn more</button>
+            </div>
+          </div>
+        </div>
+        <div class="run-container_2">
+          <div class="run-right">
+            <div>
+              <h2>Magna etiam feugiat</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto
+                modi laudantium illo quaerat quos commodi similique nam autem
+                optio dolores temporibus voluptas delectus dolore, quo itaque,
+                rerum necessitatibus animi sed.
+              </p>
+              <button>learn more</button>
+            </div>
+          </div>
+          <div class="run-left">
+            <img src="img/img-right.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <h3>Get in touch</h3>
+        <form class="contact-container">
+          <div class="field">
+            <label for="name">Name</label>
+            <input class="input_1" type="text" id="name" name="name" />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input class="input_2" type="email" id="email" name="email" />
+          </div>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </form>
+        <button class="btn" type="submit" aria-label="Send your message">
+          Send Message
+        </button>
+      </section>
+
+      <footer>
+        <ul>
+          <li>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li><a href=""></a><i class="fa-brands fa-facebook"></i></li>
+          <li><a href=""></a><i class="fa-brands fa-instagram"></i></li>
+          <li><a href=""></a><i class="fa-brands fa-linkedin"></i></li>
+          <li><a href=""></a><i class="fa-regular fa-envelope"></i></li>
+        </ul>
+      </footer>
+    </main>
+
+
+
+
+
+    <script>
+      let lastScrollPosition = 0;
+      const nav = document.getElementById('backButtonNav');
+    
+      window.addEventListener('scroll', () => {
+        const currentScrollPosition = window.scrollY;
+    
+        if (currentScrollPosition > lastScrollPosition) {
+          // On défile vers le bas => cacher le bouton
+          nav.classList.add('hidden');
+        } else {
+          // On remonte => afficher le bouton
+          nav.classList.remove('hidden');
+        }
+    
+        // Met à jour la dernière position de défilement
+        lastScrollPosition = currentScrollPosition;
+      });
+    </script>
+    
+  </body>
+</html>

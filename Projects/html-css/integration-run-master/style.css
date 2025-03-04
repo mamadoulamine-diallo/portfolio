@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  font-family: "roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+}
+button {
+  background: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 15px 35px;
+  border-radius: 30px;
+  border: 1px solid lightgray;
+  letter-spacing: 2px;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: .3s;
+}
+button:hover, footer li:hover {
+  border:1px solid skyblue;
+  color: skyblue;
+}
+/* *************Header**************** */
+
+.header-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.header-right img {
+  width: 100%;
+  height: 100vh;
+}
+.header-left, .run-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-left > div {
+  width: 90%;
+}
+h1,h2 {
+  font-weight: 300;
+  padding-bottom: 30px;
+}
+p {
+  line-height: 30px;
+}
+.run-container_1 {
+  height: 370px;
+  display: grid;
+  grid-template-columns: 33% 67%;
+}
+.run-left img {
+  height: 370px;
+  width: 100%;
+  object-fit: cover;
+}
+.run-right > div {
+  width: 90%;
+}
+.run-container_2 {
+  height: 370px;
+  display: grid;
+  grid-template-columns: 67% 33%;
+  border-top: 2px solid rgba(240, 236, 236, 0.526);;
+}
+.contact {
+  padding: 50px;
+  text-align: center;
+  border-top: 2px solid rgba(238, 237, 237, 0.526);;
+}
+h3 {
+  text-transform: none;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.794);
+  margin-bottom: 50px;
+}
+.contact-container {
+  width: 50%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr ;
+  grid-template-areas: 
+    "col1 col2"
+    "col3 col3";
+  gap: 10px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: 400; 
+}
+.input_2, .input_1, textarea {
+  height: 35px;
+  border: 2px solid rgba(214, 212, 212, 0.628);
+  border-radius: 5px;
+}
+
+.input_1 {
+  grid-area: col1;
+}
+
+.input_2 {
+  grid-area: col2;
+}
+
+.field_ {
+  display: inline;
+}
+
+textarea {
+  grid-area: col3;
+  margin-top: 40px;
+  height: 150px;
+  resize: none;
+}
+.btn {
+  margin-top: 40px;
+}
+footer {
+  width: 80%;
+  margin: 0 auto;
+  padding: 80px 0;
+  border-top: 2px solid rgba(225, 221, 221, 0.526);;
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 60px;
+  width: 50px;
+  height: 50px;
+  border: 2px solid rgba(213, 209, 209, 0.526);
+  border-radius: 25px;
+  cursor: pointer;
+  
+}
+
+/* Barre de navigation */
+nav {
+  background-color: #f8f9fa; /* Couleur de fond légère */
+  padding: 10px 20px;
+  text-align: left;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Légère ombre */
+  position: sticky; /* La navigation reste visible au défilement */
+  top: 0;
+  z-index: 1000;
+}
+
+/* Bouton de retour */
+.btn-back {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #007bff; /* Bleu */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+/* Effet au survol */
+.btn-back:hover {
+  background-color: #0056b3; /* Bleu foncé */
+}
+
+/* Ajoute une transition pour un effet fluide */
+nav {
+  background-color: #f8f9fa;
+  padding: 10px 20px;
+  text-align: left;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Lorsque la classe 'hidden' est appliquée */
+nav.hidden {
+  transform: translateY(-100%); /* Déplace le bouton vers le haut */
+  opacity: 0; /* Rend le bouton invisible */
+}
+
