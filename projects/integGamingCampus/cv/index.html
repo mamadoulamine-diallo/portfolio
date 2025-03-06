@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Front-End Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* Styles Généraux */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Fira Code', 'Courier New', Courier, monospace;
+
+    }
+    body {
+      background-color: #1e1e1e;
+      color: #fff;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+    a {
+      color: #ff5370;
+      text-decoration: none;
+    }
+    h1, h2, h3 {
+      margin-bottom: 10px;
+    }
+
+    /* Header */
+    header {
+      background-color: #262626;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #ff5370;
+    }
+    header h1 {
+      font-size: 2.5em;
+      color: #ff5370;
+    }
+    header h2 {
+      font-size: 1.5em;
+      color: #b2b2b2;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      margin: 0 15px;
+      font-size: 1.1em;
+    }
+    nav a:hover {
+      color: #ff5370;
+    }
+
+    /* Sections */
+    section {
+      padding: 30px 20px;
+      border-bottom: 1px solid #333;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    #about p, #experience p, #skills p {
+      margin: 10px 0;
+    }
+
+    /* Expérience et Compétences */
+    .job, .skill {
+      background-color: #2c2c2c;
+      margin: 15px 0;
+      padding: 15px;
+      border-left: 4px solid #ff5370;
+      transition: all 0.3s;
+    }
+    .job:hover, .skill:hover {
+      transform: translateX(5px);
+      background-color: #333;
+    }
+
+    /* Progress Bars */
+    .progress-bar {
+      background-color: #444;
+      border-radius: 10px;
+      height: 10px;
+      width: 100%;
+      margin: 10px 0;
+      overflow: hidden;
+    }
+    .progress-bar span {
+      display: block;
+      height: 100%;
+      background-color: #ff5370;
+      border-radius: 10px;
+      animation: grow 2s ease-in-out;
+    }
+    @keyframes grow {
+      from { width: 0; }
+    }
+
+    /* Projets */
+    #projects ul {
+      list-style: none;
+    }
+    #projects li {
+      margin: 10px 0;
+    }
+    #projects li a {
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    #projects li a:hover {
+      color: #ff5370;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #262626;
+      border-top: 2px solid #ff5370;
+    }
+  </style>
+</head>
+<body>
+  <!-- En-tête -->
+  <header>
+    <div class="container">
+      <h1>Ton Nom</h1>
+      <h2>Front-End Developer</h2>
+      <nav>
+        <a href="#about">A Propos</a>
+        <a href="#experience">Expérience</a>
+        <a href="#skills">Compétences</a>
+        <a href="#projects">Projets</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Section A Propos -->
+  <section id="about">
+    <div class="container">
+      <h2>À Propos</h2>
+      <p>Je suis un développeur front-end passionné par la création d'interfaces modernes et interactives. Avec une solide maîtrise de HTML, CSS et JavaScript, je conçois des expériences utilisateur fluides et intuitives.</p>
+    </div>
+  </section>
+
+  <!-- Section Expérience -->
+  <section id="experience">
+    <div class="container">
+      <h2>Expérience</h2>
+      <div class="job">
+        <h3>Front-End Developer - Entreprise X</h3>
+        <p><em>2020 - 2022</em></p>
+        <p>Intégration de maquettes, développement de composants interactifs, et optimisation des performances.</p>
+      </div>
+      <div class="job">
+        <h3>Web Developer - Entreprise Y</h3>
+        <p><em>2018 - 2020</em></p>
+        <p>Collaboration avec des équipes UX/UI pour la création de sites responsives.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Compétences -->
+  <section id="skills">
+    <div class="container">
+      <h2>Compétences</h2>
+      <div class="skill">
+        <p>HTML / CSS</p>
+        <div class="progress-bar"><span style="width: 90%;"></span></div>
+      </div>
+      <div class="skill">
+        <p>JavaScript</p>
+        <div class="progress-bar"><span style="width: 80%;"></span></div>
+      </div>
+      <div class="skill">
+        <p>React</p>
+        <div class="progress-bar"><span style="width: 70%;"></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Projets -->
+  <section id="projects">
+    <div class="container">
+      <h2>Projets</h2>
+      <ul>
+        <li><a href="#">Portfolio Interactif</a> - Une démonstration de mes compétences en développement front-end.</li>
+        <li><a href="#">Application To-Do List</a> - Une app dynamique avec React et JavaScript.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Section Contact -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email : <a href="mailto:tonemail@email.com">tonemail@email.com</a></p>
+      <p>LinkedIn : <a href="#">linkedin.com/tonprofil</a></p>
+      <p>GitHub : <a href="#">github.com/tonprofil</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Réalisé avec HTML, CSS et JavaScript | 2024</p>
+  </footer>
+</body>
+</html>
