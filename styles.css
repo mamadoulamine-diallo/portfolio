@@ -70,11 +70,12 @@ header::before {
   
 }
 .picture {
-  margin-top: 10px;
+  /* margin-top: 10px; */
   width: 250px;
   height: 250px;
-  border-radius: 125px ;
- margin: auto;
+  border-radius: 150px ;
+ /* margin: auto; */
+ object-fit: contain;
 }
 .bio {
   margin: 10px;
